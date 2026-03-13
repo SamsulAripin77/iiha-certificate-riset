@@ -60,7 +60,7 @@ body {
     font-family: "Lora", "DejaVu Serif", serif;
     font-style: italic;
     font-weight: 700;
-    font-size: clamp(18px, 3.15vw, 35px);
+    font-size: 40px;
     letter-spacing: clamp(0.2px, 0.06vw, 0.8px);
     line-height: 1.08;
     color: #00adee !important;
@@ -134,38 +134,4 @@ body {
     width: 8%;
     height: auto;
     object-fit: contain;
-}
-
-@media (max-width: 768px) {
-    .iiha-cert2__presented {
-        width: 54%;
-    }
-
-    .iiha-cert2__name {
-        width: 58%;
-    }
-
-    .iiha-cert2__detail {
-        width: 56%;
-        top: 56.8%;
-    }
-
-    .iiha-cert2__hours {
-        top: 69.2%;
-    }
-
-    .iiha-cert2__sign-name,
-    .iiha-cert2__sign-role {
-        width: 40%;
-    }
-
-    .iiha-cert2__sign-role {
-        top: 87.6%;
-    }
-
-    .iiha-cert2__barcode {
-        left: 69.5%;
-        top: 87.89%;
-        width: 9.5%;
-    }
 }
