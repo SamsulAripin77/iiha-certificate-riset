@@ -1,19 +1,27 @@
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
+    width: 297mm;
+    height: 210mm;
 }
 
 body {
     font-family: "DejaVu Serif", serif;
     background: #f5f5f5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 
 .iiha-cert2 {
     position: relative;
-    width: min(100vw, 1123px);
-    aspect-ratio: 1123 / 794;
-    height: auto;
+    width: 297mm;
+    height: 210mm;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -21,62 +29,75 @@ body {
 .iiha-cert2__bg {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
+    width: 297mm;
+    height: 210mm;
 }
 
 .iiha-cert2 p {
     position: absolute;
     margin: 0;
-    line-height: normal;
+    line-height: 1.15;
     color: #23345e;
     box-sizing: border-box;
 }
 
 .iiha-cert2__cert-id {
-    left: 10.66%;
-    top: 31.61%;
+    left: 33.1mm;
+    top: 66.4mm;
     font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
-    font-size: clamp(12px, 1.78vw, 20px);
-    letter-spacing: clamp(0.2px, 0.05vw, 0.6px);
+    font-size: 20px;
+    letter-spacing: 0.6px;
+}
+
+.iiha-cert2__event_title {
+    left: 33.1mm;
+    top: 52.1mm;
+    width: 180.6mm;
+    font-family: "DM Serif Display", "DejaVu Serif", serif;
+    font-size: 30.461px;
+    letter-spacing: 17.363px;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .iiha-cert2__presented {
-    left: 10.66%;
-    top: 36.52%;
-    width: 45%;
+    left: 33.1mm;
+    top: 76.7mm;
+    width: 180.0mm;
     font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
-    font-size: clamp(12px, 1.78vw, 20px);
-    letter-spacing: clamp(0.2px, 0.05vw, 0.6px);
+    font-size: 20px;
+    letter-spacing: 0.6px;
     color: #23345e;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .iiha-cert2__name {
-    left: 10.66%;
-    top: 43.96%;
-    width: 54%;
+    left: 31.7mm;
+    top: 94.4mm;
+    width: 180.4mm;
+    max-height: 24mm;
     font-family: "Lora", "DejaVu Serif", serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 40px;
-    letter-spacing: clamp(0.2px, 0.06vw, 0.8px);
-    line-height: 1.08;
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    line-height: 1.1;
     color: #00adee !important;
     white-space: normal;
-    overflow-wrap: anywhere;
-    text-wrap: balance;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 
 .iiha-cert2__detail {
     position: absolute;
-    left: 10.66%;
-    top: 55.91%;
-    width: 52%;
+    left: 33.1mm;
+    top: 115.3mm;
+    width: 180.4mm;
     font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
-    font-size: clamp(12px, 1.78vw, 20px);
-    letter-spacing: clamp(0.2px, 0.05vw, 0.6px);
+    font-size: 20px;
+    letter-spacing: 0.6px;
     line-height: 1.2;
     color: #23345e;
 }
@@ -85,7 +106,7 @@ body {
     position: static;
     margin: 0;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .iiha-cert2__detail p + p {
@@ -93,45 +114,45 @@ body {
 }
 
 .iiha-cert2__hours {
-    left: 10.66%;
-    top: 66.4%;
+    left: 33.1mm;
+    top: 139.0mm;
     font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
-    font-size: clamp(12px, 1.78vw, 20px);
-    letter-spacing: clamp(0.2px, 0.05vw, 0.6px);
+    font-size: 20px;
+    letter-spacing: 0.6px;
 }
 
 .iiha-cert2__sign-name {
-    left: 10.86%;
-    top: 85.50%;
-    width: 33%;
+    left: 32.3mm;
+    top: 180.5mm;
+    width: 120mm;
     font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
-    font-size: clamp(10px, 1.3vw, 14.637px);
-    letter-spacing: clamp(0.14px, 0.04vw, 0.4391px);
+    font-size: 14.637px;
+    letter-spacing: 0.4391px;
     line-height: 1.18;
     font-weight: 700;
     color: #23345e;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .iiha-cert2__sign-role {
-    left: 10.86%;
-    top: 87.89%;
-    width: 34%;
+    left: 32.3mm;
+    top: 185.3mm;
+    width: 120mm;
     font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
-    font-size: clamp(9px, 1.13vw, 12.674px);
-    letter-spacing: clamp(0.12px, 0.03vw, 0.3802px);
+    font-size: 12.674px;
+    letter-spacing: 0.3802px;
     line-height: 1.2;
     color: #23345e;
     white-space: normal;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 
 .iiha-cert2__barcode {
     position: absolute;
-    left: 53%;
-    top: 78.20%;
-    width: 8%;
+    left: 157.9mm;
+    top: 164.3mm;
+    width: 23.8mm;
     height: auto;
     object-fit: contain;
 }
