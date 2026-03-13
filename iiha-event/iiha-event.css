@@ -1,0 +1,158 @@
+@page {
+    size: A4 landscape;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 297mm;
+    height: 210mm;
+}
+
+body {
+    font-family: "DejaVu Serif", serif;
+    background: #f5f5f5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.iiha-cert2 {
+    position: relative;
+    width: 297mm;
+    height: 210mm;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.iiha-cert2__bg {
+    position: absolute;
+    inset: 0;
+    width: 297mm;
+    height: 210mm;
+}
+
+.iiha-cert2 p {
+    position: absolute;
+    margin: 0;
+    line-height: 1.15;
+    color: #23345e;
+    box-sizing: border-box;
+}
+
+.iiha-cert2__cert-id {
+    left: 33.1mm;
+    top: 66.4mm;
+    font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+}
+
+.iiha-cert2__event_title {
+    left: 33.1mm;
+    top: 52.1mm;
+    width: 180.6mm;
+    font-family: "DM Serif Display", "DejaVu Serif", serif;
+    font-size: 30.461px;
+    letter-spacing: 17.363px;
+    text-transform: uppercase;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.iiha-cert2__presented {
+    left: 33.1mm;
+    top: 76.7mm;
+    width: 180.0mm;
+    font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    color: #23345e;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.iiha-cert2__name {
+    left: 31.7mm;
+    top: 94.4mm;
+    width: 180.4mm;
+    max-height: 24mm;
+    font-family: "Lora", "DejaVu Serif", serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    line-height: 1.1;
+    color: #00adee !important;
+    white-space: normal;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.iiha-cert2__detail {
+    position: absolute;
+    left: 33.1mm;
+    top: 115.3mm;
+    width: 180.4mm;
+    font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 1.2;
+    color: #23345e;
+}
+
+.iiha-cert2__detail p {
+    position: static;
+    margin: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.iiha-cert2__detail p + p {
+    margin-top: 0;
+}
+
+.iiha-cert2__hours {
+    left: 33.1mm;
+    top: 139.0mm;
+    font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+}
+
+.iiha-cert2__sign-name {
+    left: 32.3mm;
+    top: 180.5mm;
+    width: 120mm;
+    font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
+    font-size: 14.637px;
+    letter-spacing: 0.4391px;
+    line-height: 1.18;
+    font-weight: 700;
+    color: #23345e;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.iiha-cert2__sign-role {
+    left: 32.3mm;
+    top: 185.3mm;
+    width: 120mm;
+    font-family: "Amazing Slab Trial", "DejaVu Serif", serif;
+    font-size: 12.674px;
+    letter-spacing: 0.3802px;
+    line-height: 1.2;
+    color: #23345e;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.iiha-cert2__barcode {
+    position: absolute;
+    left: 157.9mm;
+    top: 164.3mm;
+    width: 23.8mm;
+    height: auto;
+    object-fit: contain;
+}
