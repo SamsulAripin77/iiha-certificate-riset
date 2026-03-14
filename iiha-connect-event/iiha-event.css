@@ -8,8 +8,6 @@ html,
 body {
         margin: 0;
         padding: 0;
-        width: 297mm;
-        height: 210mm;
 }
 
 body {
@@ -181,19 +179,20 @@ body {
         left: 26mm;
         bottom: 21mm;
         width: 176mm;
-        display: grid;
-        grid-template-columns: repeat(10, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-items: center;
-        column-gap: 2.2mm;
-        row-gap: 2.2mm;
+        justify-content: center;
+        align-content: flex-start;
+        gap: 2.2mm;
         z-index: 2;
         background: transparent;
 }
 .iiha-cert2__sponsors img {
+        flex: 0 0 calc((100% - 19.8mm) / 10);
         height: 5.2362629167mm;
         width: auto;
-        max-width: 15.5mm;
+        max-width: calc((100% - 19.8mm) / 10);
         object-fit: contain;
         margin: 0;
         background: transparent;
