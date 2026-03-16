@@ -8,17 +8,28 @@ html,
 body {
         margin: 0;
         padding: 0;
+        width: 297mm;
+        height: 210mm;
+        background-color: #f5f5f5;
 }
 
-.iiha-cert2 {
+body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+}
+
+.iiha-connect_certificate {
         position: relative;
         width: 297mm;
         height: 210mm;
         margin: 0 auto;
         color: #111;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
 }
 
-.iiha-cert2__bg {
+.iiha-connect_certificate__bg {
         position: absolute;
         top: 0;
         left: 0;
@@ -27,7 +38,7 @@ body {
          z-index:0;
 }
 
-.iiha-cert2__top_logos {
+.iiha-connect_certificate__top_logos {
         position: absolute;
         text-align: center;
         top: 25mm;
@@ -35,7 +46,7 @@ body {
         width: 192mm;
 }
 
-.iiha-cert2__top_logos img {
+.iiha-connect_certificate__top_logos img {
         display: inline-block;
         vertical-align: middle;
         margin: 0 2.5mm;
@@ -44,97 +55,113 @@ body {
 }
 
 
-/* Area putih konten, tidak menumpang motif biru kanan */
-.iiha-cert2__content {
+.iiha-connect_certificate__content {
         position: absolute;
         left: 16mm;
         top: 49mm;
         width: 193mm;
         text-align: center;
 }
-.iiha-cert2__content p,
-.iiha-cert2__sign-block p {
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-}
-.iiha-cert2__title {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 26pt;
-        font-weight: 700;
-        letter-spacing: 0;
-        margin-bottom: 11pt;
-        margin-top: 0;
-        color: #111;
-}
-.iiha-cert2__subtitle {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15.468pt;
-        font-weight: 700;
-        margin-bottom: 16pt;
-        color: #111;
-}
-.iiha-cert2__name {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 19pt;
-        font-weight: 700;
-        margin-bottom: 12pt;
-        color: #111;
-}
-.iiha-cert2__as {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13.89pt;
-        margin-bottom: 9pt;
-        color: #111;
-}
-.iiha-cert2__event {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18pt;
-        font-weight: 700;
-        margin-bottom: 7pt;
-        color: #111;
-}
-.iiha-cert2__event-bold {
-        font-size: 24pt;
-        font-weight: 700;
-}
-.iiha-cert2__desc {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10.5pt;
-        line-height: 1.3;
-        margin-bottom: 7pt;
-        color: #222;
-}
-.iiha-cert2__date {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12.114pt;
-        font-weight: 700;
-        margin-bottom: 0;
-        color: #111;
-}
 
-/* Tanda tangan di bawah area konten, tidak menumpang motif kanan */
-.iiha-cert2__signatures {
-        position: absolute;
-        left: 34mm;
-        top: 142mm;
-        width: 158mm;
-}
-.iiha-cert2__sign-table {
-        width: 158mm;
+.iiha-connect_certificate__content-table {
+        width: 193mm;
         border-collapse: collapse;
         border-spacing: 0;
 }
-.iiha-cert2__sign-block {
-        width: 79mm;
+
+.iiha-connect_certificate__content-table td {
+        padding: 0;
         text-align: center;
         vertical-align: top;
+}
+
+.iiha-connect_certificate__title {
+        font-size: 26pt;
+        font-weight: 700;
+        letter-spacing: 0;
+        color: #111;
+        padding-bottom: 4.5mm !important;
+}
+
+.iiha-connect_certificate__subtitle {
+        font-size: 15.468pt;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 4mm !important;
+}
+
+.iiha-connect_certificate__name {
+        font-size: 19pt;
+        font-weight: 700;
+        color: #111;
+        padding-bottom: 3.2mm !important;
+}
+
+.iiha-connect_certificate__as {
+        font-size: 13.89pt;
+        color: #111;
+        padding-bottom: 2.5mm !important;
+}
+
+.iiha-connect_certificate__event {
+        font-size: 18pt;
+        font-weight: 700;
+        color: #111;
+        line-height: 1.15;
+        padding-bottom: 2.2mm !important;
+}
+
+.iiha-connect_certificate__event-bold {
+        font-size: 24pt;
+        font-weight: 700;
+}
+
+.iiha-connect_certificate__event sup {
+        font-size: 55%;
+        line-height: 0;
+        vertical-align: super;
+}
+
+.iiha-connect_certificate__desc {
+        font-size: 10.5pt;
+        line-height: 1.3;
+        color: #222;
+        padding-bottom: 2.2mm !important;
+}
+
+.iiha-connect_certificate__date {
+        font-size: 12.114pt;
+        font-weight: 700;
+        color: #111;
+}
+
+.iiha-connect_certificate__signatures {
+        position: absolute;
+        left: 33mm;
+        top: 138mm;
+        width: 160mm;
+        height: 24mm;
+}
+
+.iiha-connect_certificate__sign-block {
+        position: absolute;
+        top: 0;
+        width: 72mm;
+        text-align: center;
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 9pt;
         line-height: 1.2;
 }
-.iiha-cert2__sign-img {
+
+.iiha-connect_certificate__sign-block--left {
+        left: 0;
+}
+
+.iiha-connect_certificate__sign-block--right {
+        right: 0;
+}
+
+.iiha-connect_certificate__sign-img {
         display: block;
         margin: 0 auto 1.5mm auto;
         height: 14mm;
@@ -142,40 +169,65 @@ body {
         max-width: 60mm;
 }
 
-.iiha-cert2__sign-name {
-        font-family: Arial, Helvetica, sans-serif;
+.iiha-connect_certificate__sign-name {
+        margin: 0;
         font-size: 9pt;
         font-weight: bold;
         line-height: 1.2;
-        margin-bottom: 0.8mm;
         color: #111;
 }
-.iiha-cert2__sign-role {
-        font-family: Arial, Helvetica, sans-serif;
+
+.iiha-connect_certificate__sign-role {
+        margin: 0.8mm 0 0;
         font-size: 7.5pt;
         line-height: 1.2;
         color: #333;
 }
 
-/* Sponsor bar di bawah, tidak menumpang motif kanan */
-.iiha-cert2__sponsors {
+.iiha-connect_certificate__sponsors {
         position: absolute;
-        left: 26mm;
-        top: 176mm;
-        width: 176mm;
+        left: 18mm;
+        top: 175.5mm;
+        width: 188mm;
         text-align: center;
-        z-index:1;
-}
-.iiha-cert2__sponsors img {
-        display: inline-block;
-        vertical-align: middle;
-        height: 5mm;
-        width: 15.5mm;
-        max-width: 15.5mm;
-        margin: 0 1mm 2.2mm;
+        z-index: 1;
 }
 
-.iiha-cert2__barcode {
+.iiha-connect_certificate__sponsor-table {
+        width: 188mm;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+.iiha-connect_certificate__sponsor-table td {
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+}
+
+.iiha-connect_certificate__sponsor-list {
+        width: 180mm;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 0;
+}
+
+.iiha-connect_certificate__sponsor-item {
+        display: inline-block;
+}
+
+.iiha-connect_certificate__sponsor-item img {
+        display: block;
+        width: auto;
+        height: 7mm;
+        max-width: 20mm;
+        margin-bottom: 2mm;
+        margin-right: 1mm;
+        margin-left: 1mm;
+}
+
+.iiha-connect_certificate__barcode {
     position: absolute;
     right: 8mm;
     top: 178mm;
@@ -183,10 +235,10 @@ body {
     height: 24mm;
 }
 
-.iiha-cert2__content,
-.iiha-cert2__signatures,
-.iiha-cert2__top_logos,
-.iiha-cert2__sponsors,
-.iiha-cert2__barcode{
+.iiha-connect_certificate__content,
+.iiha-connect_certificate__signatures,
+.iiha-connect_certificate__top_logos,
+.iiha-connect_certificate__sponsors,
+.iiha-connect_certificate__barcode{
     z-index:2;
 }
